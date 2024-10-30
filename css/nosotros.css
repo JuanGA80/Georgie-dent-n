@@ -1,0 +1,290 @@
+.fondo_nosotros {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo_nosotros img {
+  max-width: 100%;
+  padding: 0px 0px;
+}
+
+.casos_clinicos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.casos_clinicos h2 {
+  display: block;
+  width: 85%;
+  background-color: #002c89;
+  color: #feee00;
+  padding: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.container_casos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  grid-gap: 20px;
+  margin-top: 30px;
+  padding: 0px 60px;
+}
+.item_casos img {
+  max-width: 100%;
+}
+.item_casos h3 {
+  display: block;
+  width: 80%;
+  background-color: #002c89;
+  padding: 15px;
+  margin: auto;
+  color: #feee00;
+  margin-top: 10px;
+}
+.testimonios {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonios h2 {
+  display: block;
+  width: 85%;
+  background-color: #002c89;
+  color: #feee00;
+  padding: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.container_testimonios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  grid-gap: 50px;
+  margin: 20px 0px;
+}
+.insta_contacto img,
+.whats_contacto img {
+  max-width: 100%;
+  transition: 0.5s;
+}
+.insta_contacto img:hover,
+.whats_contacto img:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.confiar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.confiar h2 {
+  display: block;
+  width: 85%;
+  background-color: #002c89;
+  color: #fff;
+  padding: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.puntos_de_valor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0px;
+}
+.item_puntos {
+  width: 90%;
+  background-color: #009ec0;
+  padding: 20px;
+  border-radius: 20px;
+}
+.item_puntos p {
+  text-align: justify;
+  color: #fff;
+  font-size: 25px;
+}
+/* modal doctores  */
+.container_texto {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+}
+
+.move {
+  transform: translateX(0);
+}
+#cierro {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  color: blanchedalmond;
+  font-size: 40px;
+}
+.copy {
+  position: absolute;
+  top: 30vh;
+  bottom: 30vh;
+  left: 5%;
+  background: #002c89;
+  width: 90%;
+  height: 40%;
+  border-radius: 20px;
+  padding: 20px;
+  transform: scale(0);
+  transition: transform 2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aparecer_texto {
+  transform: scale(1);
+  transition: transform 2s;
+}
+.copy h2 {
+  color: blanchedalmond;
+  font-size: 18px;
+  font-family: "Bebas Neue", cursive;
+}
+.copy p {
+  color: #fff;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.btn_modal {
+  display: block;
+}
+.galeria {
+  width: 100%;
+}
+.galeria h2 {
+  background-color: #002c89;
+  text-align: center;
+  color: #fff;
+  width: 85%;
+  margin: auto;
+  padding: 5px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+  grid-auto-flow: row dense;
+  padding: 20px 40px;
+}
+
+.grid-gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grid-gallery__image:hover {
+  filter: blur(1px);
+}
+/*fin de estilos doctores */
+
+@media (max-width: 767px) {
+  #texto_uno,
+  #texto-dos,
+  #texto-tres {
+    font-size: 0.9em;
+  }
+  .container_casos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    grid-gap: 20px;
+    margin-top: 30px;
+    padding: 0px 20px;
+  }
+  .item_casos h3 {
+    display: block;
+    width: 85%;
+    background-color: #002c89;
+    padding: 15px;
+    margin: auto;
+    color: #feee00;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .item_puntos p {
+    text-align: justify;
+    color: #fff;
+    font-size: 14px;
+  }
+  .confiar h2 {
+    font-size: 1.2em;
+  }
+  .container_testimonios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    grid-gap: 50px;
+    margin: 20px 0px;
+  }
+  .insta_contacto a,
+  .whats_contacto a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .insta_contacto img,
+  .whats_contacto img {
+    max-width: 90%;
+    transition: 0.5s;
+  }
+  .whats_contacto img {
+    margin-top: 10px;
+  }
+
+  .galeria h2 {
+    background-color: #002c89;
+    text-align: center;
+    color: #fff;
+    width: 85%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+  }
+}
